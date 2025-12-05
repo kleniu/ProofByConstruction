@@ -127,7 +127,7 @@ async def proxy_chat_completions(request: Request):
             media_type="text/event-stream",
         )
 
-    # Non-streaming path: simple request/response… boring!
+    # Non-streaming path: simple request/response
     async with client.stream(
         "POST",
         upstream_url,
